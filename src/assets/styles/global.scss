@@ -1,0 +1,20 @@
+$color: #eee;
+body {
+  background-color: $color;
+  // 文字禁用选中
+  user-select: none;
+}
+img {
+  // 不允许拖动图片
+  -webkit-user-drag: none;
+}
+// 首页的布局样式
+.logo {
+  height: 32px;
+  margin: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background-color: #fff;
+}
