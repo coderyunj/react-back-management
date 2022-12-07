@@ -10,15 +10,26 @@
     color: #fff;
 
     :global {
-
       .ant-input,
-      .ant-input-password,
-      .ant-input-placehodler {
+      .ant-input-password {
         background-color: rgba(1, 1, 1, 0);
+        border-color: #4096ff;
         color: #fff;
       }
+      .ant-input::-webkit-input-placeholder {
+        color: rgba(24, 144, 255, .6);
+      }
+      // .input::webkit-input-placeholder{
+      //   color:red;
+      // }
     }
-
+    .captchaBox {
+      display: flex;
+      .captchaImg {
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    }
     h1 {
       font-weight: bold;
       font-size: 22px;
@@ -37,22 +48,20 @@
 
       &:before,
       &:after {
-        content: "";
+        content: '';
         width: 100px;
         height: 2px;
         position: absolute;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), #1976D2);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #1976d2);
         left: -20px;
         top: 18px;
       }
 
       &:after {
         left: auto;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), #1976D2);
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #1976d2);
         right: -20px;
       }
-
-
     }
   }
 }
