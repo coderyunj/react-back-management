@@ -8,22 +8,7 @@ import styleImport, {AntdResolve} from 'vite-plugin-style-import' // 配置按�
 export default defineConfig({
   plugins: [
     react(),
-    styleImport({
-      resolves: [
-        AntdResolve()
-      ],
-    })
   ],
-  // css: {
-  //   preprocessorOptions: {
-  //     less: {
-  //       javascriptEnabled: true,
-  //       modifyVars: {
-  //         '@primary-color': '#4377FE',//设置antd主题色
-  //       },
-  //     },
-  //   }
-  // },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, './src')

@@ -5,7 +5,7 @@ import Comp1 from './components/Comp1'
 import Comp2 from './components/Comp2'
 import { useRoutes, Outlet, Link } from 'react-router-dom'
 // import reactLogo from './assets/react.svg'
-// import 'antd/dist/antd.less'
+// import 'antd/dist/antd.css'
 import router from './router'
 import LayOut from './components/LayOut'
 function App() {
@@ -26,7 +26,7 @@ function App() {
       <Link to="/About">About</Link> */}
       {/* <Outlet></Outlet> */}
       {outlet}
-      {/* <LayOut /> */}
+      {/* <LayOut /> */} 
     </div>
   )
 }

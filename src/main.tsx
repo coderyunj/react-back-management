@@ -6,14 +6,14 @@ import 'reset-css'
 // 全局样式
 import '@/assets/styles/global.scss'
 // 最后是组件的样式，这样一个样式引入顺序才对
+// import 'antd/dist/antd.min.css'
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 // import Router from './router'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
 )
